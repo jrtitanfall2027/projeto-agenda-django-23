@@ -7,7 +7,7 @@ from contact.forms import RegisterForm
 def register(request):
     form = RegisterForm()
 
-    # messages.info(request, 'Mensagem de teste')
+    messages.info(request, 'Mensagem de teste')
     # messages.success(request, 'Registro criado com sucesso')
     # messages.error(request, 'Erro ao criar o registro')
     # messages.warning(request, 'Aviso: algo não está certo')
@@ -18,8 +18,8 @@ def register(request):
 
         if form.is_valid():
             form.save()
-            messages.success(request, 'Registro criado com sucesso')
-            return redirect('contact:index')
+            # messages.success(request, 'Registro criado com sucesso')
+            # return redirect('contact:index')
 
     return render(
         request,
