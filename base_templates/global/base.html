@@ -14,3 +14,11 @@
 
 </body>
 </html>
+{% comment %} {% block extra_scripts %}
+  {{ block.super }}
+  {% include 'global/partials/_scripts.html' %}
+{% endblock extra_scripts %}
+
+{% block messages %}
+  {% include 'global/partials/_messages.html' %}
+{% endblock messages %} {% endcomment %}
