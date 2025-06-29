@@ -75,6 +75,7 @@ No seu computador local
 
 ```
 git remote add agendarepo usuario@IP_SERVIDOR:~/agendarepo
+git remote add agendarepo reginaldojunior@34.67.84.157:~/agendarepo
 git push agendarepo main
 ```
 
@@ -129,6 +130,7 @@ Cole os dados.
 ```
 cd ~/agendaapp
 python3.11 -m venv venv
+python3.13 -m venv venv
 . venv/bin/activate
 pip install --upgrade pip
 pip install django
